@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: Riddles
+Version: 1.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+
+This is a package that provides 14 riddles at random
+that were collected from the internet.
+
+USAGE
+
+from Riddles.riddle import riddle
+
+print(riddle())
+
