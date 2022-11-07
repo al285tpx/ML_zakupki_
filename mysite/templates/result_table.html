@@ -1,10 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends 'index.html' %}
+{% load staticfiles %}
+{% block content %}
+
+<div class="row">
+    <div class="col-6">
+        <h4>Продукт: {{product_search}}</h4>
+        <h4>Регион: {{kod_regiona}}</h4>
+        <h4>Интервал: {{dates_contracts_baza}}</h4>
+        <h4>Путь к файлам: {{my_directory}}</h4>
+    </div>
+</div>
+<div class="row">
+    <div class="col-6">
+        {{ce|safe}}
+    </div>
+</div>
+
+
+{% endblock %}
