@@ -48,7 +48,6 @@ def getjson (url, data=None):
     return response
 
 
-
 def index(request):
     if request.method == "POST":
         product_search = request.POST.get("product_search")
@@ -71,8 +70,6 @@ def index(request):
             pass
         # переходим в папку запроса:
         os.chdir(product_search + '_регион-' + kod_regiona + '_' + dates_contracts)
-
-
 
         url = "http://openapi.clearspending.ru/restapi/v3/contracts/search/?"
 

@@ -7,6 +7,8 @@ from datetime import timedelta
 import os
 import glob
 
+from CostAnalyzer.loader.views import my_directory
+
 
 def okpd2analize (my_directory, product_search, kod_regiona, dates_contracts_baza):
     # на всякий случай вернемся в исходную директорию:
