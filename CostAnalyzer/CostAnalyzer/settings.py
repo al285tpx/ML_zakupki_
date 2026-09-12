@@ -123,7 +123,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-CLEARSPENDING_API_KEY = '6L5sSiuvogztRHD7VBBfRPry0KAbbe5w'
+CLEARSPENDING_API_KEY = os.environ.get('CLEARSPENDING_API_KEY', '6L5sSiuvogztRHD7VBBfRPry0KAbbe5w')
 
 LOGGING = {
     'version': 1,

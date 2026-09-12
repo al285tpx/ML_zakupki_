@@ -3,6 +3,7 @@ import pandas as pd
 import logging
 from datetime import datetime, timedelta
 from typing import List, Dict, Any, Optional
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from .api_client import ClearSpendingClient
 
 logger = logging.getLogger(__name__)
@@ -69,18 +70,37 @@ class ContractService:
                     print(f"!!! [FORCED DEBUG] First contract regnum value: {first_item.get('regnum')} / {first_item.get('regNum')}")
 
             detailed_contracts = []
+            # Use ThreadPoolExecutor to fetch contract details in parallel
+            with ThreadPoolExecutor(max_workers=10) as executor:
+                # Map futures to the original contract to handle results in order or identify failures
+                future_to_contract = {
+                    executor.submit(self.api_client.get_contract_details,
+                                   (contract.get('regnum') or contract.get('regNum'))): contract
+                    for contract in contracts_data if (contract.get('regnum') or contract.get('regNum'))
+                }
+
+                # For contracts without regnum, add them directly
+                for contract in contracts_data:
+                    if not (contract.get('regnum') or contract.get('regNum')):
+                        detailed_contracts.append(contract)
+
+                for future in as_completed(future_to_contract):
+                    contract = future_to_contract[future]
+                    try:
+                        details = future.result()
+                        if details:
+                            detailed_contracts.append(details)
+                        else:
+                            detailed_contracts.append(contract)
+                    except Exception as e:
+                        logger.error(f"Error fetching details for contract {contract.get('regnum')}: {e}")
+                        detailed_contracts.append(contract)
+
+            # Update all_found_regnums
             for contract in contracts_data:
                 reg_num = contract.get('regnum') or contract.get('regNum')
                 if reg_num:
                     all_found_regnums.append(reg_num)
-                    print(f"!!! [FORCED DEBUG] Fetching details for regnum: {reg_num}")
-                    details = self.api_client.get_contract_details(reg_num)
-                    if details:
-                        detailed_contracts.append(details)
-                    else:
-                        detailed_contracts.append(contract)
-                else:
-                    detailed_contracts.append(contract)
 
             df = pd.DataFrame(detailed_contracts)
 
@@ -90,12 +110,16 @@ class ContractService:
             if not processed_df.empty:
                 # To avoid overlapping, remove last date if not at the end
                 if current_finish < date_end:
-                    last_date = df['signDate'].iloc[-1].split('T')[0]
-                    processed_df = processed_df[processed_df['signDate'] != last_date]
-                    # Update current_start to the last contract date to avoid gaps
-                    try:
-                        current_start = datetime.strptime(last_date, '%Y-%m-%d')
-                    except (ValueError, IndexError):
+                    last_row = df.iloc[-1]
+                    last_date_val = last_row.get('signDate')
+                    if isinstance(last_date_val, str):
+                        last_date = last_date_val.split('T')[0]
+                        processed_df = processed_df[processed_df['signDate'] != last_date]
+                        try:
+                            current_start = datetime.strptime(last_date, '%Y-%m-%d')
+                        except (ValueError, IndexError):
+                            current_start = current_finish + timedelta(days=1)
+                    else:
                         current_start = current_finish + timedelta(days=1)
                 else:
                     current_start = current_finish + timedelta(days=1)
@@ -181,47 +205,66 @@ class ContractService:
         logger.info(f"Processing {initial_count} contracts from API...")
 
         for _, row in df.iterrows():
-            products = row.get('products', [])
-            suppliers = row.get('suppliers', [])
-            customer = row.get('customer', {})
+            # Use .get() and provide defaults, then verify types to avoid 'float' object is not iterable
+            products = row.get('products')
+            if not isinstance(products, list):
+                products = []
+
+            suppliers = row.get('suppliers')
+            if not isinstance(suppliers, list):
+                suppliers = []
+
+            customer = row.get('customer')
+            if not isinstance(customer, dict):
+                customer = {}
 
             if not products:
                 continue
 
-            try:
-                for prod in products:
-                    # Filter by product search (case insensitive)
-                    try:
-                        prod_name = prod.get('name', '')
-                        if product_search.lower() not in prod_name.lower():
-                            continue
+            for prod in products:
+                if not isinstance(prod, dict):
+                    continue
 
-                        # Extract supplier info (first one for now, as per current logic)
-                        supplier = suppliers[0] if suppliers else {}
+                prod_name = prod.get('name')
+                if not isinstance(prod_name, str):
+                    prod_name = str(prod_name) if prod_name is not None else ''
 
-                        results.append({
-                            'contract': row.get('regnum'),
-                            'regionCode': row.get('regioncode'),
-                            'signDate': row.get('signdate'),
-                            'product_price': prod.get('price'),
-                            'product_kol-vo': prod.get('quantity'),
-                            'product_ed_izm': prod.get('OKEI', {}).get('name'),
-                            'OKEI': prod.get('OKEI', {}).get('code'),
-                            'product_sum': prod.get('sum'),
-                            'product_name': prod.get('name'),
-                            'OKPD2_code': prod.get('OKPD2', {}).get('code'),
-                            'OKPD2_name': prod.get('OKPD2', {}).get('name'),
-                            'supplier_name': supplier.get('organizationName'),
-                            'supplier_INN': supplier.get('inn'),
-                            'supplier_address': supplier.get('factualaddress'),
-                            'customer_name': customer.get('fullname'),
-                            'customer_INN': customer.get('inn'),
-                            'customer_address': customer.get('postaladdress'),
-                        })
-                    except:
-                        pass
-            except:
-                pass
+                if product_search.lower() not in prod_name.lower():
+                    continue
+
+                supplier = suppliers[0] if suppliers else {}
+                if not isinstance(supplier, dict):
+                    supplier = {}
+
+                # Extract OKEI (unit of measure) info - check both cases
+                okei_info = prod.get('okei') or prod.get('OKEI')
+                okei_name = okei_info.get('name') if isinstance(okei_info, dict) else None
+                okei_code = okei_info.get('code') if isinstance(okei_info, dict) else None
+
+                # Extract OKPD2 info - check both cases
+                okpd2_info = prod.get('okpd2') or prod.get('OKPD2')
+                okpd2_code = okpd2_info.get('code') if isinstance(okpd2_info, dict) else None
+                okpd2_name = okpd2_info.get('name') if isinstance(okpd2_info, dict) else None
+
+                results.append({
+                    'contract': row.get('regnum'),
+                    'regionCode': row.get('regioncode'),
+                    'signDate': row.get('signdate'),
+                    'product_price': prod.get('price'),
+                    'product_kol-vo': prod.get('quantity'),
+                    'product_ed_izm': okei_name,
+                    'OKEI': okei_code,
+                    'product_sum': prod.get('sum'),
+                    'product_name': prod_name,
+                    'OKPD2_code': okpd2_code,
+                    'OKPD2_name': okpd2_name,
+                    'supplier_name': supplier.get('organizationName'),
+                    'supplier_INN': supplier.get('inn'),
+                    'supplier_address': supplier.get('factualaddress'),
+                    'customer_name': customer.get('fullname'),
+                    'customer_INN': customer.get('inn'),
+                    'customer_address': customer.get('postaladdress'),
+                })
 
         final_df = pd.DataFrame(results)
         logger.info(f"Processed {len(final_df)} items after filtering by search term '{product_search}'")

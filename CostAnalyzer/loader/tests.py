@@ -18,12 +18,12 @@ class TestClearSpendingClient(unittest.TestCase):
         # Mock successful API response
         mock_response = MagicMock()
         mock_response.status_code = 200
-        mock_response.json.return_value = {'contracts': {'data': [{'regnum': '123'}]}}
+        mock_response.json.return_value = {'data': [{'regnum': '123'}]}
         mock_request.return_value = mock_response
 
         result = self.client.search_contracts({'search': 'test'})
 
-        self.assertEqual(result['contracts']['data'][0]['regnum'], '123')
+        self.assertEqual(result['data'][0]['regnum'], '123')
         # Verify API key was added
         args, kwargs = mock_request.call_args
         self.assertEqual(kwargs['params']['apikey'], 'test_key')
@@ -62,11 +62,17 @@ class TestContractService(unittest.TestCase):
 
     def test_fetch_contracts_pagination_limit(self):
         # Mock API to return data for 2 pages then stop
+        # Each page must have 50 records to continue pagination
+        page1 = [{'regnum': str(i), 'signDate': '2023-01-01T00:00:00', 'products': [{'name': 'test'}]} for i in range(50)]
+        page2 = [{'regnum': str(i), 'signDate': '2023-01-02T00:00:00', 'products': [{'name': 'test'}]} for i in range(50, 100)]
+
         self.mock_api.search_contracts.side_effect = [
-            {'contracts': {'data': [{'regnum': '1', 'signDate': '2023-01-01T00:00:00', 'products': [{'name': 'test product 1'}]}]}},
-            {'contracts': {'data': [{'regnum': '2', 'signDate': '2023-01-02T00:00:00', 'products': [{'name': 'test product 2'}]}]}},
+            {'data': page1},
+            {'data': page2},
             None # stop pagination
         ]
+
+
 
         start = datetime(2023, 1, 1)
         end = datetime(2023, 1, 10)

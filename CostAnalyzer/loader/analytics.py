@@ -1,12 +1,16 @@
 import pandas as pd
 import numpy as np
 import re
+import logging
+from typing import Optional
 from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer, TfidfTransformer
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.model_selection import train_test_split
 from sklearn.feature_selection import chi2
 import nltk
 from nltk.corpus import stopwords
+
+logger = logging.getLogger(__name__)
 
 # Ensure stopwords are downloaded
 try:
@@ -17,8 +21,35 @@ except LookupError:
 class AnalyticsService:
     """Service for analyzing contract data and classifying OKPD2 codes."""
 
-    @staticmethod
-    def analyze_okpd2(df: pd.DataFrame, product_search: str, okpd2_sprav_path: str) -> tuple[pd.DataFrame, list]:
+    def __init__(self):
+        self._okpd2_sprav_cache = None
+        self._last_sprav_path = None
+
+    def _get_okpd2_sprav(self, path: str) -> Optional[pd.DataFrame]:
+        """Loads and caches the OKPD2 reference spreadsheet."""
+        if self._okpd2_sprav_cache is not None and self._last_sprav_path == path:
+            return self._okpd2_sprav_cache
+
+        try:
+            logger.info(f"Loading OKPD2 spreadsheet from {path}...")
+            sprav = pd.read_excel(path)
+            # Standardize spreadsheet columns
+            sprav['len_kod'] = sprav.iloc[:, 0].astype(str).str.len()
+            sprav_12 = sprav[sprav['len_kod'] == 12].drop(['len_kod'], axis=1)
+
+            # Map column names for consistency
+            sprav_12 = sprav_12.rename(columns={
+                sprav_12.columns[0]: 'code',
+                sprav_12.columns[1]: 'OKPD2_name'
+            })
+            self._okpd2_sprav_cache = sprav_12
+            self._last_sprav_path = path
+            return self._okpd2_sprav_cache
+        except Exception as e:
+            logger.error(f"Error loading OKPD2 spreadsheet: {e}")
+            return None
+
+    def analyze_okpd2(self, df: pd.DataFrame, product_search: str, okpd2_sprav_path: str) -> tuple[pd.DataFrame, list]:
         """
         Fills missing OKPD2 codes using existing data and a reference spreadsheet.
         """
@@ -61,21 +92,8 @@ class AnalyticsService:
         ce_nan2 = df[df['OKPD2_name_res'].isna()]
         list_nan2 = ce_nan2['product_name'].unique()
 
-        try:
-            okpd2_sprav = pd.read_excel(okpd2_sprav_path)
-            # Standardize spreadsheet columns
-            # Assuming '01' is the code column based on previous code
-            okpd2_sprav['len_kod'] = okpd2_sprav.iloc[:, 0].astype(str).str.len()
-            okpd2_sprav_12 = okpd2_sprav[okpd2_sprav['len_kod'] == 12].drop(['len_kod'], axis=1)
-
-            # Map column names for consistency
-            # Previous code used: columns={'01': 'code', 'Продукция и услуги сельского хозяйства и охоты': 'OKPD2_name'}
-            # We'll use index-based mapping for robustness
-            okpd2_sprav_12 = okpd2_sprav_12.rename(columns={
-                okpd2_sprav_12.columns[0]: 'code',
-                okpd2_sprav_12.columns[1]: 'OKPD2_name'
-            })
-
+        okpd2_sprav_12 = self._get_okpd2_sprav(okpd2_sprav_path)
+        if okpd2_sprav_12 is not None:
             list_okpd2_names = okpd2_sprav_12['OKPD2_name'].values
             for product in list_nan2:
                 for sprav_name in list_okpd2_names:
@@ -84,8 +102,6 @@ class AnalyticsService:
                         df.loc[(df['product_name'] == product) & (df['OKPD2_name'].isna()), 'OKPD2_name_res'] = sprav_name
                         df.loc[(df['product_name'] == product) & (df['OKPD2_code'].isna()), 'OKPD2_code_res'] = code
                         break
-        except Exception as e:
-            print(f"Error loading OKPD2 spreadsheet: {e}")
 
         return df, list_nan2
 
@@ -101,10 +117,18 @@ class AnalyticsService:
         if df_train.empty:
             return df
 
-        # Preprocessing
-        df_train['product_name_res'] = df_train['product_name'].str.lower()
-        df_train['product_name_res'] = df_train['product_name_res'].str.split('[a-zA-z№=.+"«]', expand=True)[0].str.rstrip('[ (-:,]')
-        df_train['product_name_res'] = df_train['product_name_res'].str.replace(r'\n', ' ').str.replace(r'\t', ' ').str.rstrip('[ (-:,]')
+        def preprocess_text(text):
+            if not isinstance(text, str):
+                return ''
+            text = text.lower()
+            # Split on Latin letters and some special characters
+            text = re.split('[a-zA-z№=.+"«]', text)[0]
+            # Clean up whitespace and trailing punctuation
+            text = text.replace(r'\n', ' ').replace(r'\t', ' ').strip().rstrip('[ (-:,]')
+            return text
+
+        # Preprocessing training data
+        df_train['product_name_res'] = df_train['product_name'].apply(preprocess_text)
 
         # TF-IDF setup
         sw = stopwords.words("russian")
@@ -121,8 +145,7 @@ class AnalyticsService:
         # Predict for missing values
         for product in list_nan2:
             # Prepare product name for prediction
-            prod_res = product.lower()
-            prod_res = re.split('[a-zA-z№=.+"«]', prod_res)[0].rstrip('[ (-:,]')
+            prod_res = preprocess_text(product)
 
             pred_name = clf.predict(tfidf.transform([prod_res]))[0]
             pred_name_cap = pred_name.capitalize()
@@ -130,12 +153,22 @@ class AnalyticsService:
             mask = df['product_name'] == product
             df.loc[mask, 'OKPD2_name_res'] = pred_name_cap
 
-            # Find corresponding code from training data
-            matching_codes = df_train[df_train['OKPD2_name_res'].str.lower() == pred_name.lower()]['OKPD2_code_res'].unique()
-            if len(matching_codes) > 0:
-                df.loc[mask, 'OKPD2_code_res'] = matching_codes[0]
+            # Find most frequent corresponding code from training data to avoid inconsistency
+            matching_codes = df_train[df_train['OKPD2_name_res'].str.lower() == pred_name.lower()]['OKPD2_code_res']
+            if not matching_codes.empty:
+                most_frequent_code = matching_codes.value_counts().idxmax()
+                df.loc[mask, 'OKPD2_code_res'] = most_frequent_code
 
-        # Calculate quartiles for results
+        # Calculate quartiles and filter results
+        return AnalyticsService.calculate_price_quartiles(df, product_search)
+
+    @staticmethod
+    def calculate_price_quartiles(df: pd.DataFrame, product_search: str) -> pd.DataFrame:
+        """
+        Filters data by product search in OKPD2 name and calculates price quartiles per unit of measure.
+        """
+        df = df.copy()
+        # Remove rows with missing unit prices
         df = df[df['product_price'].notna()]
         # Filter by product search in OKPD2 name
         ce = df[df['OKPD2_name_res'].str.contains(product_search, case=False, na=False)].copy()
