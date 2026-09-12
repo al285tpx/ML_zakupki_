@@ -1,0 +1,288 @@
+INFO 2026-09-07 15:53:39,591 services 82613 6129971200 Fetching page 1 for window 2026-04-01 to 2026-05-01
+INFO 2026-09-07 15:53:40,365 services 82613 6129971200 No more data found at page 1. Ending pagination.
+INFO 2026-09-07 15:53:40,366 services 82613 6129971200 Fetching page 1 for window 2026-05-02 to 2026-06-01
+INFO 2026-09-07 15:53:40,666 services 82613 6129971200 No more data found at page 1. Ending pagination.
+INFO 2026-09-07 15:53:40,666 services 82613 6129971200 Fetching page 1 for window 2026-06-02 to 2026-07-02
+INFO 2026-09-07 15:53:40,953 services 82613 6129971200 No more data found at page 1. Ending pagination.
+INFO 2026-09-07 15:53:40,953 services 82613 6129971200 Fetching page 1 for window 2026-07-03 to 2026-08-02
+INFO 2026-09-07 15:53:41,236 services 82613 6129971200 No more data found at page 1. Ending pagination.
+INFO 2026-09-07 15:53:41,237 services 82613 6129971200 Fetching page 1 for window 2026-08-03 to 2026-09-02
+INFO 2026-09-07 15:53:41,519 services 82613 6129971200 No more data found at page 1. Ending pagination.
+INFO 2026-09-07 15:53:41,520 services 82613 6129971200 Fetching page 1 for window 2026-09-03 to 2026-09-07
+INFO 2026-09-07 15:53:41,838 services 82613 6129971200 No more data found at page 1. Ending pagination.
+INFO 2026-09-07 15:56:00,578 services 82613 6129971200 Fetching page 1 for window 2026-04-01 to 2026-05-01
+INFO 2026-09-07 15:56:01,798 services 82613 6129971200 No more data found at page 1. Ending pagination.
+INFO 2026-09-07 15:56:01,798 services 82613 6129971200 Fetching page 1 for window 2026-05-02 to 2026-06-01
+INFO 2026-09-07 15:56:02,436 services 82613 6129971200 No more data found at page 1. Ending pagination.
+INFO 2026-09-07 15:56:02,437 services 82613 6129971200 Fetching page 1 for window 2026-06-02 to 2026-07-02
+INFO 2026-09-07 15:56:02,914 services 82613 6129971200 No more data found at page 1. Ending pagination.
+INFO 2026-09-07 15:56:02,915 services 82613 6129971200 Fetching page 1 for window 2026-07-03 to 2026-08-02
+INFO 2026-09-07 15:56:03,682 services 82613 6129971200 No more data found at page 1. Ending pagination.
+INFO 2026-09-07 15:56:03,692 services 82613 6129971200 Fetching page 1 for window 2026-08-03 to 2026-09-02
+INFO 2026-09-07 15:56:04,164 services 82613 6129971200 No more data found at page 1. Ending pagination.
+INFO 2026-09-07 15:56:04,164 services 82613 6129971200 Fetching page 1 for window 2026-09-03 to 2026-09-07
+INFO 2026-09-07 15:56:04,474 services 82613 6129971200 No more data found at page 1. Ending pagination.
+INFO 2026-09-07 16:27:35,665 services 82613 6129971200 Fetching page 1 for window 2026-06-01 to 2026-07-01
+INFO 2026-09-07 16:27:36,373 services 82613 6129971200 No more data found at page 1. Ending pagination.
+INFO 2026-09-07 16:27:36,374 services 82613 6129971200 Fetching page 1 for window 2026-07-02 to 2026-08-01
+INFO 2026-09-07 16:27:36,695 services 82613 6129971200 No more data found at page 1. Ending pagination.
+INFO 2026-09-07 16:27:36,697 services 82613 6129971200 Fetching page 1 for window 2026-08-02 to 2026-09-01
+INFO 2026-09-07 16:27:36,969 services 82613 6129971200 No more data found at page 1. Ending pagination.
+INFO 2026-09-07 16:27:36,970 services 82613 6129971200 Fetching page 1 for window 2026-09-02 to 2026-09-07
+INFO 2026-09-07 16:27:37,233 services 82613 6129971200 No more data found at page 1. Ending pagination.
+INFO 2026-09-07 16:28:11,185 services 82613 6129971200 Fetching page 1 for window 2026-06-01 to 2026-07-01
+INFO 2026-09-07 16:28:12,884 services 82613 6129971200 No more data found at page 1. Ending pagination.
+INFO 2026-09-07 16:28:12,885 services 82613 6129971200 Fetching page 1 for window 2026-07-02 to 2026-08-01
+INFO 2026-09-07 16:28:13,571 services 82613 6129971200 No more data found at page 1. Ending pagination.
+INFO 2026-09-07 16:28:13,572 services 82613 6129971200 Fetching page 1 for window 2026-08-02 to 2026-09-01
+INFO 2026-09-07 16:28:14,466 services 82613 6129971200 No more data found at page 1. Ending pagination.
+INFO 2026-09-07 16:28:14,466 services 82613 6129971200 Fetching page 1 for window 2026-09-02 to 2026-09-07
+INFO 2026-09-07 16:28:14,762 services 82613 6129971200 No more data found at page 1. Ending pagination.
+INFO 2026-09-09 06:14:19,583 services 60100 6125121536 Fetching page 1 for window 2026-06-01 to 2026-07-01
+INFO 2026-09-09 06:14:27,950 services 60100 6125121536 No more data found at page 1. Ending pagination.
+INFO 2026-09-09 06:14:27,951 services 60100 6125121536 Fetching page 1 for window 2026-07-02 to 2026-08-01
+INFO 2026-09-09 06:14:32,206 services 60100 6125121536 No more data found at page 1. Ending pagination.
+INFO 2026-09-09 06:14:32,208 services 60100 6125121536 Fetching page 1 for window 2026-08-02 to 2026-09-01
+INFO 2026-09-09 06:15:02,441 services 60100 6125121536 No more data found at page 1. Ending pagination.
+INFO 2026-09-09 06:15:02,442 services 60100 6125121536 Fetching page 1 for window 2026-09-02 to 2026-09-09
+INFO 2026-09-09 06:15:04,731 services 60100 6125121536 No more data found at page 1. Ending pagination.
+INFO 2026-09-09 07:30:08,650 services 71462 6195834880 Fetching page 1 for window 2026-06-01 to 2026-07-01
+INFO 2026-09-09 07:30:17,036 services 71462 6195834880 No more data found at page 1. Ending pagination.
+INFO 2026-09-09 07:30:17,037 services 71462 6195834880 Fetching page 1 for window 2026-07-02 to 2026-08-01
+INFO 2026-09-09 07:30:21,209 services 71462 6195834880 No more data found at page 1. Ending pagination.
+INFO 2026-09-09 07:30:21,210 services 71462 6195834880 Fetching page 1 for window 2026-08-02 to 2026-09-01
+INFO 2026-09-09 07:30:22,177 services 71462 6195834880 No more data found at page 1. Ending pagination.
+INFO 2026-09-09 07:30:22,178 services 71462 6195834880 Fetching page 1 for window 2026-09-02 to 2026-09-09
+INFO 2026-09-09 07:30:23,041 services 71462 6195834880 No more data found at page 1. Ending pagination.
+INFO 2026-09-09 07:30:51,946 services 71462 6195834880 Fetching page 1 for window 2026-06-01 to 2026-07-01
+INFO 2026-09-09 07:31:25,095 services 71462 6195834880 No more data found at page 1. Ending pagination.
+INFO 2026-09-09 07:31:25,096 services 71462 6195834880 Fetching page 1 for window 2026-07-02 to 2026-08-01
+INFO 2026-09-09 07:31:32,136 services 71462 6195834880 No more data found at page 1. Ending pagination.
+INFO 2026-09-09 07:31:32,137 services 71462 6195834880 Fetching page 1 for window 2026-08-02 to 2026-09-01
+INFO 2026-09-09 07:31:33,186 services 71462 6195834880 No more data found at page 1. Ending pagination.
+INFO 2026-09-09 07:31:33,187 services 71462 6195834880 Fetching page 1 for window 2026-09-02 to 2026-09-09
+INFO 2026-09-09 07:31:34,011 services 71462 6195834880 No more data found at page 1. Ending pagination.
+INFO 2026-09-09 07:49:10,177 services 78720 6193672192 Fetching page 1 for window 2026-06-01 to 2026-07-01
+INFO 2026-09-09 07:49:12,926 services 78720 6193672192 No more data found at page 1. Ending pagination.
+INFO 2026-09-09 07:49:12,927 services 78720 6193672192 Fetching page 1 for window 2026-07-02 to 2026-08-01
+INFO 2026-09-09 07:49:14,206 services 78720 6193672192 No more data found at page 1. Ending pagination.
+INFO 2026-09-09 07:49:14,206 services 78720 6193672192 Fetching page 1 for window 2026-08-02 to 2026-09-01
+INFO 2026-09-09 07:49:14,808 services 78720 6193672192 No more data found at page 1. Ending pagination.
+INFO 2026-09-09 07:49:14,809 services 78720 6193672192 Fetching page 1 for window 2026-09-02 to 2026-09-09
+INFO 2026-09-09 07:49:15,390 services 78720 6193672192 No more data found at page 1. Ending pagination.
+INFO 2026-09-09 07:49:36,500 services 78720 6193672192 Fetching page 1 for window 2026-06-01 to 2026-07-01
+INFO 2026-09-09 07:49:37,809 services 78720 6193672192 No more data found at page 1. Ending pagination.
+INFO 2026-09-09 07:49:37,810 services 78720 6193672192 Fetching page 1 for window 2026-07-02 to 2026-08-01
+INFO 2026-09-09 07:49:38,372 services 78720 6193672192 No more data found at page 1. Ending pagination.
+INFO 2026-09-09 07:49:38,374 services 78720 6193672192 Fetching page 1 for window 2026-08-02 to 2026-09-01
+INFO 2026-09-09 07:49:38,756 services 78720 6193672192 No more data found at page 1. Ending pagination.
+INFO 2026-09-09 07:49:38,757 services 78720 6193672192 Fetching page 1 for window 2026-09-02 to 2026-09-09
+INFO 2026-09-09 07:49:39,114 services 78720 6193672192 No more data found at page 1. Ending pagination.
+INFO 2026-09-09 07:51:58,477 services 79985 6124744704 Fetching page 1 for window 2026-06-01 to 2026-07-01
+INFO 2026-09-09 07:52:00,282 services 79985 6124744704 No more data found at page 1. Ending pagination.
+INFO 2026-09-09 07:52:00,283 services 79985 6124744704 Fetching page 1 for window 2026-07-02 to 2026-08-01
+INFO 2026-09-09 07:52:02,110 services 79985 6124744704 No more data found at page 1. Ending pagination.
+INFO 2026-09-09 07:52:02,110 services 79985 6124744704 Fetching page 1 for window 2026-08-02 to 2026-09-01
+INFO 2026-09-09 07:52:02,952 services 79985 6124744704 No more data found at page 1. Ending pagination.
+INFO 2026-09-09 07:52:02,952 services 79985 6124744704 Fetching page 1 for window 2026-09-02 to 2026-09-09
+INFO 2026-09-09 07:52:03,642 services 79985 6124744704 No more data found at page 1. Ending pagination.
+INFO 2026-09-09 07:55:14,195 services 81176 6191755264 Fetching page 1 for window 2026-06-01 to 2026-07-01
+INFO 2026-09-09 07:55:16,044 services 81176 6191755264 No more data found at page 1. Ending pagination.
+INFO 2026-09-09 07:55:16,045 services 81176 6191755264 Fetching page 1 for window 2026-07-02 to 2026-08-01
+INFO 2026-09-09 07:55:17,570 services 81176 6191755264 No more data found at page 1. Ending pagination.
+INFO 2026-09-09 07:55:17,571 services 81176 6191755264 Fetching page 1 for window 2026-08-02 to 2026-09-01
+INFO 2026-09-09 07:55:18,286 services 81176 6191755264 No more data found at page 1. Ending pagination.
+INFO 2026-09-09 07:55:18,286 services 81176 6191755264 Fetching page 1 for window 2026-09-02 to 2026-09-09
+INFO 2026-09-09 07:55:18,877 services 81176 6191755264 No more data found at page 1. Ending pagination.
+INFO 2026-09-09 08:00:07,265 services 83228 6134427648 Fetching page 1 for window 2026-06-01 to 2026-07-01
+INFO 2026-09-09 08:00:44,235 services 83228 6134427648 No more data found at page 1. Ending pagination.
+INFO 2026-09-09 08:00:44,236 services 83228 6134427648 Fetching page 1 for window 2026-07-02 to 2026-08-01
+INFO 2026-09-09 08:00:46,117 services 83228 6134427648 No more data found at page 1. Ending pagination.
+INFO 2026-09-09 08:00:46,118 services 83228 6134427648 Fetching page 1 for window 2026-08-02 to 2026-09-01
+INFO 2026-09-09 08:00:48,250 services 83228 6134427648 No more data found at page 1. Ending pagination.
+INFO 2026-09-09 08:00:48,250 services 83228 6134427648 Fetching page 1 for window 2026-09-02 to 2026-09-09
+INFO 2026-09-09 08:01:02,299 services 83228 6134427648 No more data found at page 1. Ending pagination.
+INFO 2026-09-09 08:03:55,688 services 84607 6190559232 Fetching page 1 for window 2026-06-01 to 2026-07-01
+INFO 2026-09-09 08:04:01,383 services 84607 6190559232 No more data found at page 1. Ending pagination.
+INFO 2026-09-09 08:04:01,384 services 84607 6190559232 Fetching page 1 for window 2026-07-02 to 2026-08-01
+INFO 2026-09-09 08:04:02,234 services 84607 6190559232 No more data found at page 1. Ending pagination.
+INFO 2026-09-09 08:04:02,235 services 84607 6190559232 Fetching page 1 for window 2026-08-02 to 2026-09-01
+INFO 2026-09-09 08:04:15,490 services 84607 6190559232 No more data found at page 1. Ending pagination.
+INFO 2026-09-09 08:04:15,491 services 84607 6190559232 Fetching page 1 for window 2026-09-02 to 2026-09-09
+INFO 2026-09-09 08:04:16,861 services 84607 6190559232 No more data found at page 1. Ending pagination.
+INFO 2026-09-09 16:24:28,355 services 84607 6190559232 Fetching page 1 for window 2026-06-01 to 2026-07-01
+INFO 2026-09-09 16:24:29,648 services 84607 6190559232 No more data found at page 1. Ending pagination.
+INFO 2026-09-09 16:24:29,649 services 84607 6190559232 Fetching page 1 for window 2026-07-02 to 2026-08-01
+INFO 2026-09-09 16:24:30,018 services 84607 6190559232 No more data found at page 1. Ending pagination.
+INFO 2026-09-09 16:24:30,018 services 84607 6190559232 Fetching page 1 for window 2026-08-02 to 2026-09-01
+INFO 2026-09-09 16:24:30,465 services 84607 6190559232 No more data found at page 1. Ending pagination.
+INFO 2026-09-09 16:24:30,466 services 84607 6190559232 Fetching page 1 for window 2026-09-02 to 2026-09-09
+INFO 2026-09-09 16:24:30,952 services 84607 6190559232 No more data found at page 1. Ending pagination.
+INFO 2026-09-09 16:26:01,858 services 72829 6201913344 Fetching page 1 for window 2026-06-01 to 2026-07-01
+INFO 2026-09-09 16:26:07,036 services 72829 6201913344 No more data found at page 1. Ending pagination.
+INFO 2026-09-09 16:26:07,036 services 72829 6201913344 Fetching page 1 for window 2026-07-02 to 2026-08-01
+INFO 2026-09-09 16:26:07,807 services 72829 6201913344 No more data found at page 1. Ending pagination.
+INFO 2026-09-09 16:26:07,808 services 72829 6201913344 Fetching page 1 for window 2026-08-02 to 2026-09-01
+INFO 2026-09-09 16:26:08,943 services 72829 6201913344 No more data found at page 1. Ending pagination.
+INFO 2026-09-09 16:26:08,943 services 72829 6201913344 Fetching page 1 for window 2026-09-02 to 2026-09-09
+INFO 2026-09-09 16:26:10,089 services 72829 6201913344 No more data found at page 1. Ending pagination.
+INFO 2026-09-09 16:28:51,537 services 73946 6128840704 Fetching page 1 for window 2026-06-01 to 2026-07-01
+INFO 2026-09-09 16:28:52,658 services 73946 6128840704 No more data found at page 1. Ending pagination.
+INFO 2026-09-09 16:28:52,659 services 73946 6128840704 Fetching page 1 for window 2026-07-02 to 2026-08-01
+INFO 2026-09-09 16:28:53,055 services 73946 6128840704 No more data found at page 1. Ending pagination.
+INFO 2026-09-09 16:28:53,056 services 73946 6128840704 Fetching page 1 for window 2026-08-02 to 2026-09-01
+INFO 2026-09-09 16:28:53,314 services 73946 6128840704 No more data found at page 1. Ending pagination.
+INFO 2026-09-09 16:28:53,315 services 73946 6128840704 Fetching page 1 for window 2026-09-02 to 2026-09-09
+INFO 2026-09-09 16:28:53,570 services 73946 6128840704 No more data found at page 1. Ending pagination.
+INFO 2026-09-10 05:56:15,150 services 41907 6191460352 Fetching page 1 for window 2026-06-01 to 2026-07-01
+INFO 2026-09-10 05:56:18,427 services 41907 6191460352 No more data found at page 1. Ending pagination.
+INFO 2026-09-10 05:56:18,429 services 41907 6191460352 Fetching page 1 for window 2026-07-02 to 2026-08-01
+INFO 2026-09-10 05:56:20,456 services 41907 6191460352 No more data found at page 1. Ending pagination.
+INFO 2026-09-10 05:56:20,457 services 41907 6191460352 Fetching page 1 for window 2026-08-02 to 2026-09-01
+INFO 2026-09-10 05:56:21,233 services 41907 6191460352 No more data found at page 1. Ending pagination.
+INFO 2026-09-10 05:56:21,234 services 41907 6191460352 Fetching page 1 for window 2026-09-02 to 2026-09-09
+INFO 2026-09-10 05:56:21,836 services 41907 6191460352 No more data found at page 1. Ending pagination.
+INFO 2026-09-10 06:00:21,741 services 42224 6219018240 Fetching page 1 for window 2026-06-01 to 2026-07-01
+INFO 2026-09-10 06:00:23,346 services 42224 6219018240 No more data found at page 1. Ending pagination.
+INFO 2026-09-10 06:01:23,001 services 42224 6219018240 Fetching page 1 for window 2026-07-02 to 2026-08-01
+INFO 2026-09-10 06:01:24,644 services 42224 6219018240 No more data found at page 1. Ending pagination.
+INFO 2026-09-10 06:01:55,566 services 42224 6219018240 Fetching page 1 for window 2026-08-02 to 2026-09-01
+INFO 2026-09-10 06:01:56,907 services 42224 6219018240 No more data found at page 1. Ending pagination.
+INFO 2026-09-10 06:02:15,353 services 42224 6219018240 Fetching page 1 for window 2026-09-02 to 2026-09-09
+INFO 2026-09-10 06:02:16,366 services 42224 6219018240 No more data found at page 1. Ending pagination.
+INFO 2026-09-10 06:03:27,243 services 42224 6219018240 Fetching page 1 for window 2026-06-01 to 2026-07-01
+INFO 2026-09-10 06:03:28,904 services 42224 6219018240 No more data found at page 1. Ending pagination.
+INFO 2026-09-10 06:03:28,906 services 42224 6219018240 Fetching page 1 for window 2026-07-02 to 2026-08-01
+INFO 2026-09-10 06:03:30,878 services 42224 6219018240 No more data found at page 1. Ending pagination.
+INFO 2026-09-10 06:03:30,880 services 42224 6219018240 Fetching page 1 for window 2026-08-02 to 2026-09-01
+INFO 2026-09-10 06:03:31,179 services 42224 6219018240 No more data found at page 1. Ending pagination.
+INFO 2026-09-10 06:03:31,180 services 42224 6219018240 Fetching page 1 for window 2026-09-02 to 2026-09-09
+INFO 2026-09-10 06:03:31,977 services 42224 6219018240 No more data found at page 1. Ending pagination.
+INFO 2026-09-10 15:54:24,889 services 79942 6188675072 Fetching page 1 for window 2026-06-01 to 2026-07-01
+INFO 2026-09-10 15:54:29,802 services 79942 6188675072 No more data found at page 1. Ending pagination.
+INFO 2026-09-10 15:54:29,803 services 79942 6188675072 Fetching page 1 for window 2026-07-02 to 2026-08-01
+INFO 2026-09-10 15:54:31,818 services 79942 6188675072 No more data found at page 1. Ending pagination.
+INFO 2026-09-10 15:54:31,819 services 79942 6188675072 Fetching page 1 for window 2026-08-02 to 2026-09-01
+INFO 2026-09-10 15:54:32,568 services 79942 6188675072 No more data found at page 1. Ending pagination.
+INFO 2026-09-10 15:54:32,569 services 79942 6188675072 Fetching page 1 for window 2026-09-02 to 2026-09-09
+INFO 2026-09-10 15:54:33,013 services 79942 6188675072 No more data found at page 1. Ending pagination.
+INFO 2026-09-10 16:00:56,781 services 79942 6188675072 Fetching page 1 for window 2026-06-01 to 2026-07-01
+INFO 2026-09-10 16:00:58,320 services 79942 6188675072 No more data found at page 1. Ending pagination.
+INFO 2026-09-10 16:00:58,322 services 79942 6188675072 Fetching page 1 for window 2026-07-02 to 2026-08-01
+INFO 2026-09-10 16:00:59,525 services 79942 6188675072 No more data found at page 1. Ending pagination.
+INFO 2026-09-10 16:00:59,526 services 79942 6188675072 Fetching page 1 for window 2026-08-02 to 2026-09-01
+INFO 2026-09-10 16:01:00,082 services 79942 6188675072 No more data found at page 1. Ending pagination.
+INFO 2026-09-10 16:01:00,083 services 79942 6188675072 Fetching page 1 for window 2026-09-02 to 2026-09-09
+INFO 2026-09-10 16:01:00,504 services 79942 6188675072 No more data found at page 1. Ending pagination.
+INFO 2026-09-10 16:02:31,421 services 83498 6176190464 Fetching page 1 for window 2026-06-01 to 2026-07-01
+INFO 2026-09-10 16:10:47,054 services 86558 6216380416 Fetching page 1 for window 2026-06-01 to 2026-07-01
+INFO 2026-09-10 16:11:03,731 services 86558 6216380416 No more data found at page 1. Ending pagination.
+INFO 2026-09-10 16:11:03,734 services 86558 6216380416 Fetching page 1 for window 2026-07-02 to 2026-08-01
+INFO 2026-09-10 16:12:02,347 services 86558 6216380416 No more data found at page 1. Ending pagination.
+INFO 2026-09-10 16:12:02,349 services 86558 6216380416 Fetching page 1 for window 2026-08-02 to 2026-09-01
+INFO 2026-09-10 16:12:10,399 services 86558 6216380416 No more data found at page 1. Ending pagination.
+INFO 2026-09-10 16:12:10,400 services 86558 6216380416 Fetching page 1 for window 2026-09-02 to 2026-09-09
+INFO 2026-09-10 16:12:21,097 services 86558 6216380416 No more data found at page 1. Ending pagination.
+INFO 2026-09-10 16:18:15,364 services 86558 6216380416 Fetching page 1 for window 2026-06-01 to 2026-07-01
+INFO 2026-09-10 16:25:04,986 services 92293 6254096384 Fetching page 1 for window 2026-06-01 to 2026-07-01
+INFO 2026-09-10 16:25:22,700 services 92293 6254096384 Successfully retrieved 50 records from page 1
+INFO 2026-09-10 16:25:22,702 services 92293 6254096384 Fetching page 2 for window 2026-06-01 to 2026-07-01
+INFO 2026-09-10 16:25:43,786 services 92293 6254096384 Successfully retrieved 50 records from page 2
+INFO 2026-09-10 16:25:43,787 services 92293 6254096384 Fetching page 3 for window 2026-06-01 to 2026-07-01
+INFO 2026-09-10 16:25:56,245 services 92293 6254096384 Successfully retrieved 50 records from page 3
+INFO 2026-09-10 16:25:56,247 services 92293 6254096384 Fetching page 4 for window 2026-06-01 to 2026-07-01
+INFO 2026-09-10 16:26:51,464 services 92293 6254096384 Successfully retrieved 50 records from page 4
+INFO 2026-09-10 16:26:51,468 services 92293 6254096384 Fetching page 5 for window 2026-06-01 to 2026-07-01
+INFO 2026-09-10 16:27:13,810 services 92293 6254096384 Successfully retrieved 50 records from page 5
+INFO 2026-09-10 16:27:13,811 services 92293 6254096384 Fetching page 6 for window 2026-06-01 to 2026-07-01
+INFO 2026-09-10 16:27:41,702 services 92293 6254096384 Successfully retrieved 50 records from page 6
+INFO 2026-09-10 16:27:41,704 services 92293 6254096384 Fetching page 7 for window 2026-06-01 to 2026-07-01
+INFO 2026-09-10 16:27:48,834 services 92293 6254096384 Successfully retrieved 50 records from page 7
+INFO 2026-09-10 16:27:48,835 services 92293 6254096384 Fetching page 8 for window 2026-06-01 to 2026-07-01
+INFO 2026-09-10 16:27:53,351 services 92293 6254096384 Successfully retrieved 50 records from page 8
+INFO 2026-09-10 16:27:53,351 services 92293 6254096384 Fetching page 9 for window 2026-06-01 to 2026-07-01
+INFO 2026-09-10 16:27:58,884 services 92293 6254096384 Successfully retrieved 50 records from page 9
+INFO 2026-09-10 16:27:58,884 services 92293 6254096384 Fetching page 10 for window 2026-06-01 to 2026-07-01
+INFO 2026-09-10 16:28:03,962 services 92293 6254096384 Successfully retrieved 50 records from page 10
+INFO 2026-09-10 16:28:03,962 services 92293 6254096384 Fetching page 11 for window 2026-06-01 to 2026-07-01
+INFO 2026-09-10 16:28:11,685 services 92293 6254096384 No more data found at page 11. Ending pagination.
+INFO 2026-09-10 16:29:24,557 services 92293 6254096384 Processing 500 contracts from API...
+INFO 2026-09-10 16:29:24,766 services 92293 6254096384 Processed 0 items after filtering by search term 'Бумага'
+INFO 2026-09-10 16:29:24,767 services 92293 6254096384 Fetching page 1 for window 2026-07-02 to 2026-08-01
+INFO 2026-09-10 16:29:24,885 services 92293 6254096384 No more data found at page 1. Ending pagination.
+INFO 2026-09-10 16:29:24,886 services 92293 6254096384 Fetching page 1 for window 2026-08-02 to 2026-09-01
+INFO 2026-09-10 16:29:25,015 services 92293 6254096384 No more data found at page 1. Ending pagination.
+INFO 2026-09-10 16:29:25,016 services 92293 6254096384 Fetching page 1 for window 2026-09-02 to 2026-09-09
+INFO 2026-09-10 16:29:25,191 services 92293 6254096384 No more data found at page 1. Ending pagination.
+INFO 2026-09-10 16:47:23,409 services 1241 6246952960 Fetching page 1 for window 2026-06-01 to 2026-07-01
+INFO 2026-09-10 16:47:26,023 services 1241 6246952960 Successfully retrieved 50 records from page 1
+INFO 2026-09-10 16:47:26,024 services 1241 6246952960 Fetching page 2 for window 2026-06-01 to 2026-07-01
+INFO 2026-09-10 16:47:27,289 services 1241 6246952960 Successfully retrieved 50 records from page 2
+INFO 2026-09-10 16:47:27,290 services 1241 6246952960 Fetching page 3 for window 2026-06-01 to 2026-07-01
+INFO 2026-09-10 16:47:28,919 services 1241 6246952960 Successfully retrieved 50 records from page 3
+INFO 2026-09-10 16:47:28,919 services 1241 6246952960 Fetching page 4 for window 2026-06-01 to 2026-07-01
+INFO 2026-09-10 16:47:29,391 services 1241 6246952960 Successfully retrieved 50 records from page 4
+INFO 2026-09-10 16:47:29,391 services 1241 6246952960 Fetching page 5 for window 2026-06-01 to 2026-07-01
+INFO 2026-09-10 16:47:29,844 services 1241 6246952960 Successfully retrieved 50 records from page 5
+INFO 2026-09-10 16:47:29,845 services 1241 6246952960 Fetching page 6 for window 2026-06-01 to 2026-07-01
+INFO 2026-09-10 16:47:30,498 services 1241 6246952960 Successfully retrieved 50 records from page 6
+INFO 2026-09-10 16:47:30,498 services 1241 6246952960 Fetching page 7 for window 2026-06-01 to 2026-07-01
+INFO 2026-09-10 16:47:31,163 services 1241 6246952960 Successfully retrieved 50 records from page 7
+INFO 2026-09-10 16:47:31,164 services 1241 6246952960 Fetching page 8 for window 2026-06-01 to 2026-07-01
+INFO 2026-09-10 16:47:31,732 services 1241 6246952960 Successfully retrieved 50 records from page 8
+INFO 2026-09-10 16:47:31,733 services 1241 6246952960 Fetching page 9 for window 2026-06-01 to 2026-07-01
+INFO 2026-09-10 16:47:32,829 services 1241 6246952960 Successfully retrieved 50 records from page 9
+INFO 2026-09-10 16:47:32,830 services 1241 6246952960 Fetching page 10 for window 2026-06-01 to 2026-07-01
+INFO 2026-09-10 16:47:33,989 services 1241 6246952960 Successfully retrieved 50 records from page 10
+INFO 2026-09-10 16:47:33,990 services 1241 6246952960 Fetching page 11 for window 2026-06-01 to 2026-07-01
+INFO 2026-09-10 16:47:34,136 services 1241 6246952960 No more data found at page 11. Ending pagination.
+INFO 2026-09-10 16:48:58,247 services 1241 6246952960 Processing 500 contracts from API...
+INFO 2026-09-10 16:48:58,460 services 1241 6246952960 Processed 0 items after filtering by search term 'Бумага'
+INFO 2026-09-10 16:48:58,460 services 1241 6246952960 Fetching page 1 for window 2026-07-02 to 2026-08-01
+INFO 2026-09-10 16:48:58,588 services 1241 6246952960 No more data found at page 1. Ending pagination.
+INFO 2026-09-10 16:48:58,588 services 1241 6246952960 Fetching page 1 for window 2026-08-02 to 2026-09-01
+INFO 2026-09-10 16:48:58,711 services 1241 6246952960 No more data found at page 1. Ending pagination.
+INFO 2026-09-10 16:48:58,711 services 1241 6246952960 Fetching page 1 for window 2026-09-02 to 2026-09-09
+INFO 2026-09-10 16:48:58,835 services 1241 6246952960 No more data found at page 1. Ending pagination.
+INFO 2026-09-10 16:50:34,404 services 1241 6246952960 Fetching page 1 for window 2026-09-01 to 2026-09-09
+INFO 2026-09-10 16:50:35,449 services 1241 6246952960 Successfully retrieved 50 records from page 1
+INFO 2026-09-10 16:50:35,450 services 1241 6246952960 Fetching page 2 for window 2026-09-01 to 2026-09-09
+INFO 2026-09-10 16:50:36,069 services 1241 6246952960 Successfully retrieved 50 records from page 2
+INFO 2026-09-10 16:50:36,070 services 1241 6246952960 Fetching page 3 for window 2026-09-01 to 2026-09-09
+INFO 2026-09-10 16:50:36,895 services 1241 6246952960 Successfully retrieved 9 records from page 3
+INFO 2026-09-10 16:50:36,896 services 1241 6246952960 Page 3 was the last page (received 9/50).
+INFO 2026-09-10 16:50:54,599 services 1241 6246952960 Processing 109 contracts from API...
+INFO 2026-09-10 16:50:54,666 services 1241 6246952960 Processed 0 items after filtering by search term 'Бумага'
+INFO 2026-09-10 16:54:23,868 services 4264 6249541632 Fetching page 1 for window 2026-09-01 to 2026-09-09
+INFO 2026-09-10 16:54:24,925 services 4264 6249541632 Successfully retrieved 50 records from page 1
+INFO 2026-09-10 16:54:24,926 services 4264 6249541632 Fetching page 2 for window 2026-09-01 to 2026-09-09
+INFO 2026-09-10 16:54:25,411 services 4264 6249541632 Successfully retrieved 50 records from page 2
+INFO 2026-09-10 16:54:25,411 services 4264 6249541632 Fetching page 3 for window 2026-09-01 to 2026-09-09
+INFO 2026-09-10 16:54:25,989 services 4264 6249541632 Successfully retrieved 9 records from page 3
+INFO 2026-09-10 16:54:25,990 services 4264 6249541632 Page 3 was the last page (received 9/50).
+INFO 2026-09-10 16:54:49,644 services 4264 6249541632 Processing 109 contracts from API...
+INFO 2026-09-10 16:58:06,615 services 5706 6243184640 Fetching page 1 for window 2026-09-01 to 2026-09-09
+INFO 2026-09-10 16:58:08,146 services 5706 6243184640 Successfully retrieved 50 records from page 1
+INFO 2026-09-10 16:58:08,147 services 5706 6243184640 Fetching page 2 for window 2026-09-01 to 2026-09-09
+INFO 2026-09-10 16:58:09,798 services 5706 6243184640 Successfully retrieved 50 records from page 2
+INFO 2026-09-10 16:58:09,799 services 5706 6243184640 Fetching page 3 for window 2026-09-01 to 2026-09-09
+INFO 2026-09-10 16:58:11,194 services 5706 6243184640 Successfully retrieved 9 records from page 3
+INFO 2026-09-10 16:58:11,194 services 5706 6243184640 Page 3 was the last page (received 9/50).
+INFO 2026-09-10 16:58:35,862 services 5706 6243184640 Processing 109 contracts from API...
+INFO 2026-09-11 05:07:10,934 services 2862 6184513536 Fetching page 1 for window 2026-09-01 to 2026-09-09
+INFO 2026-09-11 05:07:13,207 services 2862 6184513536 Successfully retrieved 50 records from page 1
+INFO 2026-09-11 05:07:13,207 services 2862 6184513536 Fetching page 2 for window 2026-09-01 to 2026-09-09
+INFO 2026-09-11 05:07:14,714 services 2862 6184513536 Successfully retrieved 50 records from page 2
+INFO 2026-09-11 05:07:14,715 services 2862 6184513536 Fetching page 3 for window 2026-09-01 to 2026-09-09
+INFO 2026-09-11 05:07:16,287 services 2862 6184513536 Successfully retrieved 9 records from page 3
+INFO 2026-09-11 05:07:16,288 services 2862 6184513536 Page 3 was the last page (received 9/50).
+INFO 2026-09-11 05:07:39,561 services 2862 6184513536 Processing 109 contracts from API...
+INFO 2026-09-11 05:11:40,759 services 4538 6250737664 Fetching page 1 for window 2026-09-01 to 2026-09-09
+INFO 2026-09-11 05:11:42,089 services 4538 6250737664 Successfully retrieved 50 records from page 1
+INFO 2026-09-11 05:11:42,089 services 4538 6250737664 Fetching page 2 for window 2026-09-01 to 2026-09-09
+INFO 2026-09-11 05:11:43,229 services 4538 6250737664 Successfully retrieved 50 records from page 2
+INFO 2026-09-11 05:11:43,229 services 4538 6250737664 Fetching page 3 for window 2026-09-01 to 2026-09-09
+INFO 2026-09-11 05:11:43,951 services 4538 6250737664 Successfully retrieved 9 records from page 3
+INFO 2026-09-11 05:11:43,951 services 4538 6250737664 Page 3 was the last page (received 9/50).
+INFO 2026-09-11 05:12:14,152 services 4538 6250737664 Processing 109 contracts from API...
+INFO 2026-09-11 05:13:18,136 services 4538 6250737664 Processed 24 items after filtering by search term 'Бумага'

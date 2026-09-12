@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 {% extends 'index.html' %}
-{% load staticfiles %}
+{% load static %}
 {% block content %}
 
+<div class="container-fluid">
 <div class="row">
     <div class="col-6">
         <h4>Продукт: {{product_search}}</h4>
@@ -11,11 +12,52 @@
         <h4>Путь к файлам: {{my_directory}}</h4>
     </div>
 </div>
+<div class="row mb-3">
+    <div class="col-12">
+        <h5>Найденные regnum (всего: {{ found_regnums|length }}):</h5>
+        <div class="alert alert-secondary" style="font-family: monospace; font-size: 0.9em; max-height: 150px; overflow-y: auto;">
+            {% for regnum in found_regnums %}
+                {{ regnum }}{% if not forloop.last %}, {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
 <div class="row">
-    <div class="col-6">
+    <div class="col-12">
         {{ce|safe}}
     </div>
 </div>
 
+<div class="row mt-4">
+    <div class="col-12 d-flex justify-content-center">
+        <nav aria-label="Page navigation">
+            <ul class="pagination">
+                {% if page_obj.has_previous %}
+                    <li class="page-item">
+                        <a class="page-link" href="?{{ request.GET.urlencode }}&page={{ page_obj.previous_page_number }}">Предыдущая</a>
+                    </li>
+                {% endif %}
+
+                {% for num in page_obj.paginator.page_range %}
+                    {% if page_obj.number == num %}
+                        <li class="page-item active"><span class="page-link">{{ num }}</span></li>
+                    {% elif num > page_obj.number|add:"-3" and num < page_obj.number|add:"3" %}
+                        <li class="page-item">
+                            <a class="page-link" href="?{{ request.GET.urlencode }}&page={{ num }}">{{ num }}</a>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+
+                {% if page_obj.has_next %}
+                    <li class="page-item">
+                        <a class="page-link" href="?{{ request.GET.urlencode }}&page={{ page_obj.next_page_number }}">Следующая</a>
+                    </li>
+                {% endif %}
+            </ul>
+        </nav>
+    </div>
+</div>
+</div>
+</div>
 
 {% endblock %}
