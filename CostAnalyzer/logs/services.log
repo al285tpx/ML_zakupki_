@@ -286,3 +286,80 @@ INFO 2026-09-11 05:11:43,951 services 4538 6250737664 Successfully retrieved 9 r
 INFO 2026-09-11 05:11:43,951 services 4538 6250737664 Page 3 was the last page (received 9/50).
 INFO 2026-09-11 05:12:14,152 services 4538 6250737664 Processing 109 contracts from API...
 INFO 2026-09-11 05:13:18,136 services 4538 6250737664 Processed 24 items after filtering by search term 'Бумага'
+INFO 2026-09-12 05:16:00,120 services 80380 6125662208 Fetching page 1 for window 2026-09-01 to 2026-09-09
+INFO 2026-09-12 05:16:01,573 services 80380 6125662208 Successfully retrieved 50 records from page 1
+INFO 2026-09-12 05:16:01,574 services 80380 6125662208 Fetching page 2 for window 2026-09-01 to 2026-09-09
+INFO 2026-09-12 05:16:03,364 services 80380 6125662208 Successfully retrieved 50 records from page 2
+INFO 2026-09-12 05:16:03,364 services 80380 6125662208 Fetching page 3 for window 2026-09-01 to 2026-09-09
+INFO 2026-09-12 05:16:04,042 services 80380 6125662208 Successfully retrieved 14 records from page 3
+INFO 2026-09-12 05:16:04,042 services 80380 6125662208 Page 3 was the last page (received 14/50).
+INFO 2026-09-12 05:16:07,111 services 80380 6125662208 Processing 114 contracts from API...
+INFO 2026-09-12 05:16:07,117 services 80380 6125662208 Processed 18 items after filtering by search term 'Бумага'
+INFO 2026-09-12 05:30:33,457 services 84922 6122598400 Fetching page 1 for window 2026-09-01 to 2026-09-09
+INFO 2026-09-12 05:30:35,797 services 84922 6122598400 Successfully retrieved 50 records from page 1
+INFO 2026-09-12 05:30:35,797 services 84922 6122598400 Fetching page 2 for window 2026-09-01 to 2026-09-09
+INFO 2026-09-12 05:30:37,859 services 84922 6122598400 Successfully retrieved 50 records from page 2
+INFO 2026-09-12 05:30:37,859 services 84922 6122598400 Fetching page 3 for window 2026-09-01 to 2026-09-09
+INFO 2026-09-12 05:30:39,545 services 84922 6122598400 Successfully retrieved 14 records from page 3
+INFO 2026-09-12 05:30:39,546 services 84922 6122598400 Page 3 was the last page (received 14/50).
+INFO 2026-09-12 05:30:42,483 services 84922 6122598400 Processing 114 contracts from API...
+INFO 2026-09-12 05:30:42,493 services 84922 6122598400 Processed 21 items after filtering by search term 'Бумага'
+INFO 2026-09-12 05:31:36,029 services 85394 6157660160 Fetching page 1 for window 2026-09-01 to 2026-09-09
+INFO 2026-09-12 05:31:37,278 services 85394 6157660160 Successfully retrieved 50 records from page 1
+INFO 2026-09-12 05:31:37,279 services 85394 6157660160 Fetching page 2 for window 2026-09-01 to 2026-09-09
+INFO 2026-09-12 05:31:38,105 services 85394 6157660160 Successfully retrieved 50 records from page 2
+INFO 2026-09-12 05:31:38,106 services 85394 6157660160 Fetching page 3 for window 2026-09-01 to 2026-09-09
+INFO 2026-09-12 05:31:38,690 services 85394 6157660160 Successfully retrieved 14 records from page 3
+INFO 2026-09-12 05:31:38,691 services 85394 6157660160 Page 3 was the last page (received 14/50).
+INFO 2026-09-12 05:31:41,631 services 85394 6157660160 Processing 114 contracts from API...
+INFO 2026-09-12 05:31:41,639 services 85394 6157660160 Processed 19 items after filtering by search term 'Бумага'
+INFO 2026-09-12 05:44:17,184 services 90394 6167293952 Fetching page 1 for window 2026-09-01 to 2026-09-09
+INFO 2026-09-12 05:44:18,516 services 90394 6167293952 Successfully retrieved 50 records from page 1
+INFO 2026-09-12 05:44:18,517 services 90394 6167293952 Fetching page 2 for window 2026-09-01 to 2026-09-09
+INFO 2026-09-12 05:44:19,420 services 90394 6167293952 Successfully retrieved 50 records from page 2
+INFO 2026-09-12 05:44:19,421 services 90394 6167293952 Fetching page 3 for window 2026-09-01 to 2026-09-09
+INFO 2026-09-12 05:44:20,179 services 90394 6167293952 Successfully retrieved 14 records from page 3
+INFO 2026-09-12 05:44:20,180 services 90394 6167293952 Page 3 was the last page (received 14/50).
+INFO 2026-09-12 05:44:23,276 services 90394 6167293952 Processing 114 contracts from API...
+INFO 2026-09-12 05:44:23,290 services 90394 6167293952 Processed 18 items after filtering by search term 'Бумага'
+INFO 2026-09-12 05:46:48,490 services 91445 6125432832 Fetching page 1 for window 2026-09-01 to 2026-09-09
+INFO 2026-09-12 05:46:50,490 services 91445 6125432832 Successfully retrieved 50 records from page 1
+INFO 2026-09-12 05:46:50,491 services 91445 6125432832 Fetching page 2 for window 2026-09-01 to 2026-09-09
+INFO 2026-09-12 05:46:52,845 services 91445 6125432832 Successfully retrieved 50 records from page 2
+INFO 2026-09-12 05:46:52,846 services 91445 6125432832 Fetching page 3 for window 2026-09-01 to 2026-09-09
+INFO 2026-09-12 05:46:54,973 services 91445 6125432832 Successfully retrieved 14 records from page 3
+INFO 2026-09-12 05:46:54,973 services 91445 6125432832 Page 3 was the last page (received 14/50).
+INFO 2026-09-12 05:46:57,959 services 91445 6125432832 Processing 114 contracts from API...
+INFO 2026-09-12 05:46:57,970 services 91445 6125432832 Processed 19 items after filtering by search term 'Бумага'
+INFO 2026-09-12 05:56:56,325 services 91445 6125432832 Fetching page 1 for window 2026-09-01 to 2026-09-09
+INFO 2026-09-12 05:56:57,798 services 91445 6125432832 Successfully retrieved 50 records from page 1
+INFO 2026-09-12 05:56:57,799 services 91445 6125432832 Fetching page 2 for window 2026-09-01 to 2026-09-09
+INFO 2026-09-12 05:56:59,192 services 91445 6125432832 Successfully retrieved 50 records from page 2
+INFO 2026-09-12 05:56:59,193 services 91445 6125432832 Fetching page 3 for window 2026-09-01 to 2026-09-09
+INFO 2026-09-12 05:57:00,728 services 91445 6125432832 Successfully retrieved 14 records from page 3
+INFO 2026-09-12 05:57:00,728 services 91445 6125432832 Page 3 was the last page (received 14/50).
+INFO 2026-09-12 05:57:03,806 services 91445 6125432832 Processing 114 contracts from API...
+INFO 2026-09-12 05:57:03,818 services 91445 6125432832 Processed 25 items after filtering by search term 'Бумага'
+INFO 2026-09-12 05:58:12,341 services 95128 6251294720 Fetching page 1 for window 2026-09-01 to 2026-09-09
+INFO 2026-09-12 05:58:14,848 services 95128 6251294720 Successfully retrieved 50 records from page 1
+INFO 2026-09-12 05:58:14,848 services 95128 6251294720 Fetching page 2 for window 2026-09-01 to 2026-09-09
+INFO 2026-09-12 05:58:16,913 services 95128 6251294720 Successfully retrieved 50 records from page 2
+INFO 2026-09-12 05:58:16,914 services 95128 6251294720 Fetching page 3 for window 2026-09-01 to 2026-09-09
+INFO 2026-09-12 05:58:20,262 services 95128 6251294720 Successfully retrieved 14 records from page 3
+INFO 2026-09-12 05:58:20,262 services 95128 6251294720 Page 3 was the last page (received 14/50).
+INFO 2026-09-12 05:58:23,448 services 95128 6251294720 Processing 114 contracts from API...
+INFO 2026-09-12 05:58:23,480 services 95128 6251294720 Processed 22 items after filtering by search term 'Бумага'
+INFO 2026-09-12 06:07:47,187 services 99134 6187675648 Fetching page 1 for window 2026-09-01 to 2026-09-09
+INFO 2026-09-12 06:07:48,521 services 99134 6187675648 Successfully retrieved 50 records from page 1
+INFO 2026-09-12 06:07:48,522 services 99134 6187675648 Fetching page 2 for window 2026-09-01 to 2026-09-09
+INFO 2026-09-12 06:07:49,628 services 99134 6187675648 Successfully retrieved 50 records from page 2
+INFO 2026-09-12 06:07:49,629 services 99134 6187675648 Fetching page 3 for window 2026-09-01 to 2026-09-09
+INFO 2026-09-12 06:07:50,825 services 99134 6187675648 Successfully retrieved 14 records from page 3
+INFO 2026-09-12 06:07:50,825 services 99134 6187675648 Page 3 was the last page (received 14/50).
+INFO 2026-09-12 06:07:54,102 services 99134 6187675648 Processing 114 contracts from API...
+INFO 2026-09-12 06:07:54,131 services 99134 6187675648 Processed 18 items after filtering by search term 'Бумага'
+INFO 2026-09-12 06:11:31,730 services 99134 6187675648 Fetching page 1 for window 2026-09-01 to 2026-09-09
+INFO 2026-09-12 06:11:33,005 services 99134 6187675648 Successfully retrieved 1 records from page 1
+INFO 2026-09-12 06:11:33,005 services 99134 6187675648 Page 1 was the last page (received 1/50).
+INFO 2026-09-12 06:11:34,017 services 99134 6187675648 Processing 1 contracts from API...
+INFO 2026-09-12 06:11:34,023 services 99134 6187675648 Processed 2 items after filtering by search term 'Бумага'

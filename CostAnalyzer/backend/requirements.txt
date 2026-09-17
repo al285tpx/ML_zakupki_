@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+httpx
+pydantic
+pandas
+numpy
+scikit-learn
+nltk
+openpyxl
+celery
+redis
+pytest
+pytest-asyncio
